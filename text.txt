@@ -1,0 +1,53 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Oswald:wght@200;300;400;500;600;700&display=swap');
+
+font-family: 'Inter', sans-serif;
+font-family: 'Oswald', sans-serif;
+
+bg-color:  #afc3c3
+
+
+FREELANCE
+
+
+===== Menu =====
+
+
+Find Freelance
+Find Jobs
+About Us
+Solutions
+
+===== BUtton ====
+Log In
+
+Join Us
+
+
+
+==== Heading  ====
+
+FREELANCE
+
+
+Placeholder text - Search for any services...
+
+
+Popular Skills:
+
+web design
+ui/ux design
+database
+business cards
+
+
+A freelance service web portal connects businesses with <br>
+freelance. facilitating project collaboration and hiring.
+
+
+=== Trusted ===
+
+Trusted Freelancers
+
+200+
+Trusted Freelancers

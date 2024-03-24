@@ -1,0 +1,328 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Oswald:wght@200;300;400;500;600;700&display=swap');
+
+/* 
+font-family: 'Inter', sans-serif;
+font-family: 'Oswald', sans-serif;
+
+bg-color:  #afc3c3
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 30px;
+    height: 100px;
+    width: 100%;
+    z-index: 99999;
+    overflow: hidden;
+}
+
+nav .logo {
+    width: 170px;
+    cursor: pointer;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    justify-content: center;
+    gap: 40px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000;
+    cursor: pointer;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+
+}
+
+nav .btn-group button {
+    padding: 10px 25px;
+    font-size: 16px;
+    font-family: 'Inter', sans-serif;
+}
+nav .btn-group .login {
+    background-color: transparent;
+    border: 1px solid #000;
+    border-radius: 50px;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+    transition: all ease 0.3s;
+    z-index: 9;
+
+}
+
+nav .btn-group .join-us {
+    background-color: #000;
+    border: 1px solid #000;
+    border-radius: 50px;
+    cursor: pointer;
+    color: #fff;
+    overflow: hidden;
+    position: relative;
+    transition: all ease 0.3s;
+    z-index: 9;
+}
+
+.login::after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #000;
+    left: 50%;
+    bottom: -100%;
+    transform: translate(-50%, 0);
+    z-index: 0;
+    mix-blend-mode: difference;
+    transition: all ease 0.3s;
+    border-radius: 50%;
+
+}
+
+.login:hover::after {
+    bottom: 0;
+    border-radius: 0;
+}
+.login:hover {
+    color: #fff;
+}
+
+.join-us::after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    left: 50%;
+    bottom: -100%;
+    transform: translate(-50%, 0);
+    z-index: 0;
+    mix-blend-mode: difference;
+    transition: all ease 0.3s;
+    border-radius: 50%;
+}
+
+.join-us:hover::after {
+bottom: 0;
+border-radius: 0;
+}
+
+
+.sticky {
+    position: fixed;
+    top: 0;
+    bottom: 100%;
+    z-index: 9999;
+}
+
+/* main Csss */
+
+
+#main {
+    width: 100vw;
+    height: 100%;
+    position: relative;
+}
+
+#page1 {
+    width: 100vw;
+    height: 120vh;
+    background-color:  #afc3c3;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+#page1 h1 {
+    font-size: 21.3vw;
+    font-family: 'Oswald', sans-serif;
+    color: #fff;
+
+}
+
+form {
+    position: relative;
+    margin-top: -40px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.search {
+    width: 40%;
+    height: 55px;
+    border: 1px solid #ccc;
+    border-radius: 50px;
+    padding: 10px 50px;
+    font-family: 'Inter', sans-serif;
+}
+
+.search:focus {
+    outline: none;
+}
+
+.ri-search-line {
+    position: absolute;
+    top: 30%;
+    left: 2.5%;
+    font-size: 20px;
+}
+
+.ri-mic-line {
+    position: absolute;
+    top: 30%;
+    left: 34%;
+    font-size: 20px;
+}
+
+.ri-arrow-right-line {
+    position: absolute;
+    top: 10%;
+    left: 36.8%;
+    font-size: 16px;
+    border: 1px solid #000;
+    border-radius: 50px;
+    background-color: #000;
+    color: #fff;
+    padding: 12px;
+}
+
+/* Skills Css */
+
+
+.skills {
+    display: flex;
+    align-items: center;
+    width: 50vw;
+    height: 70px;
+    padding-left: 25px;
+    padding-right: 25px;
+    gap: 14px;
+}
+
+.skills>p {
+    font-size: 18px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    color: #323232;
+}
+
+.skills>button {
+    padding: 10px;
+    border-radius: 50px;
+    border: none;
+    font-size: 14px;
+    font-family: 'Inter', sans-serif;
+    color: #5b5b5b;
+
+}
+
+/* Desc CSS */
+
+.desc {
+    display: flex;
+    align-items: center;
+    width: 45vw;
+    height: 70px;
+    padding-left: 25px;
+    padding-right: 25px;
+    gap: 14px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.desc>p {
+    font-size: 18px;
+    color: #323232;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    line-height: 32px;
+}
+
+
+/* Trusted CSS */
+
+.trusted {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 35vw;
+    height: 200px;
+    background: linear-gradient(145deg, #c8c8c8, #f1efee);
+    border-radius: 20px;
+    padding: 20px;
+    position: relative;
+}
+
+
+.trusted .left {
+    position: relative;
+}
+.trusted .left h4 {
+    font-size: 18px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+.trusted .left .imgGroup {
+margin-left: 15px;
+}
+
+
+.trusted .left .imgGroup img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-left: -20px;
+}
+
+
+.trusted .right {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 100px;
+}
+
+.trusted .right h4  {
+    font-size: 18px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+}
+
+.trusted .right p  {
+    font-size: 16px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+}
+
+.heroImg {
+    width: 60%;
+    height: 800px;
+    position: absolute;
+    top: 100px;
+    right: 50px;
+}
+
+#page2 {
+    width: 100%;
+    height: 100vh;
+    background: #000;
+}
